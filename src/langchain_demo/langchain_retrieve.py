@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 # 准备环境变量
 load_dotenv()
-os.environ["LANGSMITH_PROJECT"] = "langchain_retrieve"
+os.environ["LANGSMITH_PROJECT"] = __file__.split(sep="\\")[-1].split(".")[0]
 embedding_model = os.getenv("EMBEDDING_MODEL")
 hf_home = os.getenv("HF_HOME")
 model_cache_dir = hf_home + "\\hub"
