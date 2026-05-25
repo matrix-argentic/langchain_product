@@ -12,6 +12,7 @@ dependencies = [
     "langchain-qwq>=0.3.4",
     "langfuse>=4.6.1",
     "langgraph>=1.1.10",
+    "langmem>=0.0.30",
     "llm-guard>=0.0.2",
     "pypdf>=6.11.0",
     "python-dotenv>=1.2.2",
